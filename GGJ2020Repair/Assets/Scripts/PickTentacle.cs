@@ -74,9 +74,11 @@ public class PickTentacle : MonoBehaviour {
             {
                 tentacle[i].GetComponent<TentacleMovement>().enabled = false;
                 tentacle[i].GetComponent<SpriteRenderer>().color = Color.white;
+                tentacle[i].GetComponent<TentacleMovement>().actives[playerNum] = false;
             }
             tentacle[currentTentacle].GetComponent<TentacleMovement>().enabled = true;
             tentacle[currentTentacle].GetComponent<SpriteRenderer>().color = playerColor;
+            tentacle[currentTentacle].GetComponent<TentacleMovement>().active = true;
         }
 
 	}

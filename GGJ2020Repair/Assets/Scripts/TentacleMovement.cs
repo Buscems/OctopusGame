@@ -20,7 +20,7 @@ public class TentacleMovement : MonoBehaviour {
 
     public float speed;
 
-    public bool active;
+    public bool[] actives;
 
     private void Awake()
     {
