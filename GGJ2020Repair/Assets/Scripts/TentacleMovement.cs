@@ -16,7 +16,7 @@ public class TentacleMovement : MonoBehaviour {
 
     Rigidbody2D rb;
 
-    Vector2 velocity;
+    public Vector2 velocity;
 
     public float speed;
 
@@ -39,7 +39,7 @@ public class TentacleMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        velocity = new Vector2(myPlayer.GetAxisRaw("Horizontal"), myPlayer.GetAxisRaw("Vertical"));
+        velocity = new Vector2(myPlayer.GetAxisRaw("MoveHorizontal"), myPlayer.GetAxisRaw("MoveVertical"));
 
         rb.MovePosition(rb.position + velocity * speed * Time.deltaTime);	
 	}
