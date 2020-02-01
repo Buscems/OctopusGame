@@ -48,40 +48,75 @@ public class PickTentacle : MonoBehaviour {
 
         for (int i = 0; i < tentacle.Length; i++)
         {
-            tentacle[i].GetComponent<TentacleMovement>().enabled = false;
-            tentacle[i].GetComponent<SpriteRenderer>().color = Color.white;
+            for (int k = 0; k < tentacle[currentTentacle].GetComponent<TentacleMovement>().actives.Length; k++)
+            {
+                if (tentacle[i].GetComponent<TentacleMovement>().actives[k] && k != playerNum - 1)
+                {
+
+                }
+                else
+                {
+                    tentacle[i].GetComponent<TentacleMovement>().enabled = false;
+                    tentacle[i].GetComponent<SpriteRenderer>().color = Color.white;
+                }
+            }
         }
         tentacle[currentTentacle].GetComponent<TentacleMovement>().enabled = true;
         tentacle[currentTentacle].GetComponent<SpriteRenderer>().color = playerColor;
-
+        tentacle[currentTentacle].GetComponent<TentacleMovement>().actives[playerNum - 1] = true;
     }
 	
 	// Update is called once per frame
 	void Update () {
 
-        
         if (myPlayer.GetButtonDown("SwitchTentacle"))
         {
-            if (currentTentacle < tentacle.Length - 1)
-            {
-                currentTentacle++;
-            }
-            else
-            {
-                currentTentacle = 0;
-            }
-            for (int i = 0; i < tentacle.Length; i++)
-            {
-                tentacle[i].GetComponent<TentacleMovement>().enabled = false;
-                tentacle[i].GetComponent<SpriteRenderer>().color = Color.white;
-                tentacle[i].GetComponent<TentacleMovement>().actives[playerNum] = false;
-            }
-            tentacle[currentTentacle].GetComponent<TentacleMovement>().enabled = true;
-            tentacle[currentTentacle].GetComponent<SpriteRenderer>().color = playerColor;
-            tentacle[currentTentacle].GetComponent<TentacleMovement>().active = true;
+            StartCoroutine(SwitchTentacle());
         }
 
-	}
+        if(tentacle[currentTentacle].GetComponent<TentacleMovement>().actives[playerNum - 1])
+        {
+            tentacle[currentTentacle].GetComponent<TentacleMovement>().enabled = true;
+        }
+
+    }
+
+
+    IEnumerator SwitchTentacle()
+    {
+        currentTentacle++;
+
+        if (currentTentacle >= tentacle.Length)
+        {
+            currentTentacle = 0;
+        }
+
+        for (int i = 0; i < tentacle[currentTentacle].GetComponent<TentacleMovement>().actives.Length; i++)
+        {
+            if(tentacle[currentTentacle].GetComponent<TentacleMovement>().actives[i] && i != playerNum--)
+            {
+                currentTentacle++;
+                yield return null;
+            }
+        }
+
+        for (int i = 0; i < tentacle.Length; i++)
+        {
+            for (int k = 0; k < tentacle[i].GetComponent<TentacleMovement>().actives.Length; k++)
+            {
+                if (!tentacle[i].GetComponent<TentacleMovement>().actives[k])
+                {
+                    tentacle[i].GetComponent<TentacleMovement>().enabled = false;
+                    tentacle[i].GetComponent<SpriteRenderer>().color = Color.white;
+                    tentacle[i].GetComponent<TentacleMovement>().actives[playerNum - 1] = false;
+                }
+            }
+        }
+        tentacle[currentTentacle].GetComponent<TentacleMovement>().playerNum = this.playerNum;
+        tentacle[currentTentacle].GetComponent<TentacleMovement>().enabled = true;
+        tentacle[currentTentacle].GetComponent<SpriteRenderer>().color = playerColor;
+        tentacle[currentTentacle].GetComponent<TentacleMovement>().actives[playerNum - 1] = true;
+    }
 
     //[REWIRED METHODS]
     //these two methods are for ReWired, if any of you guys have any questions about it I can answer them, but you don't need to worry about this for working on the game - Buscemi
