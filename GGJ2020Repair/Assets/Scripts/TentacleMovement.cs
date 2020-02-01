@@ -20,6 +20,8 @@ public class TentacleMovement : MonoBehaviour {
 
     public float speed;
 
+    public bool active;
+
     private void Awake()
     {
         //Rewired Code

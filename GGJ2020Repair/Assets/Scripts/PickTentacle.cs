@@ -17,6 +17,7 @@ public class PickTentacle : MonoBehaviour {
     public GameObject[] tentacle;
     public int currentTentacle;
 
+    public Color playerColor;
 
     private void Awake()
     {
@@ -28,20 +29,40 @@ public class PickTentacle : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		for(int i = 0; i < tentacle.Length; i++)
+
+        switch (playerNum)
+        {
+            case 1:
+                playerColor = Color.red;
+                break;
+            case 2:
+                playerColor = Color.blue;
+                break;
+            case 3:
+                playerColor = Color.cyan;
+                break;
+            case 4:
+                playerColor = Color.yellow;
+                break;
+        }
+
+        for (int i = 0; i < tentacle.Length; i++)
         {
             tentacle[i].GetComponent<TentacleMovement>().enabled = false;
+            tentacle[i].GetComponent<SpriteRenderer>().color = Color.white;
         }
         tentacle[currentTentacle].GetComponent<TentacleMovement>().enabled = true;
-	}
+        tentacle[currentTentacle].GetComponent<SpriteRenderer>().color = playerColor;
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
 
-        /*
+        
         if (myPlayer.GetButtonDown("SwitchTentacle"))
         {
-            if (currentTentacle < tentacle.Length)
+            if (currentTentacle < tentacle.Length - 1)
             {
                 currentTentacle++;
             }
@@ -49,12 +70,15 @@ public class PickTentacle : MonoBehaviour {
             {
                 currentTentacle = 0;
             }
+            for (int i = 0; i < tentacle.Length; i++)
+            {
+                tentacle[i].GetComponent<TentacleMovement>().enabled = false;
+                tentacle[i].GetComponent<SpriteRenderer>().color = Color.white;
+            }
+            tentacle[currentTentacle].GetComponent<TentacleMovement>().enabled = true;
+            tentacle[currentTentacle].GetComponent<SpriteRenderer>().color = playerColor;
         }
-        */
-        if (myPlayer.GetButtonDown("SwitchTentacle"))
-        {
-            currentTentacle = currentTentacle < tentacle.Length ? currentTentacle++ : 0;
-        }
+
 	}
 
     //[REWIRED METHODS]

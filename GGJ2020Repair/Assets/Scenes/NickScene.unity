@@ -779,7 +779,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &237294170
 BoxCollider2D:
@@ -843,7 +843,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d98a910586b1e4ed1b5cf59f03bd275d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.3566667, y: 2}
@@ -1017,6 +1017,7 @@ MonoBehaviour:
   - {fileID: 837104970}
   - {fileID: 950804251}
   currentTentacle: 0
+  playerColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!233 &242656969
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -1146,6 +1147,7 @@ MonoBehaviour:
   playerNum: 1
   velocity: {x: 0, y: 0}
   speed: 5
+  active: 0
 --- !u!50 &837104972
 Rigidbody2D:
   serializedVersion: 4
@@ -1164,7 +1166,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &837104973
 BoxCollider2D:
@@ -1243,7 +1245,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 837104970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.11, y: -2.4500003, z: 0}
+  m_LocalPosition: {x: -0.11, y: -2.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1309,7 +1311,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &903656054
 BoxCollider2D:
@@ -1373,7 +1375,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d98a910586b1e4ed1b5cf59f03bd275d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.3566667, y: 2}
@@ -1514,7 +1516,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!233 &919509874
 HingeJoint2D:
@@ -1572,6 +1574,7 @@ MonoBehaviour:
   playerNum: 1
   velocity: {x: 0, y: 0}
   speed: 5
+  active: 0
 --- !u!50 &950804253
 Rigidbody2D:
   serializedVersion: 4
@@ -1654,7 +1657,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 27acc7740aa590a43909e7c81b1eca93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.3566667, y: 2}
@@ -1735,7 +1738,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &1391162566
 BoxCollider2D:
@@ -1799,7 +1802,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d98a910586b1e4ed1b5cf59f03bd275d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.3566667, y: 2}
@@ -1880,7 +1883,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &1452153499
 BoxCollider2D:
@@ -2052,7 +2055,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.000000014901161, y: 1.6500001}
+  m_ConnectedAnchor: {x: 0.000000014901161, y: 1.6499999}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -2079,7 +2082,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &1660076847
 BoxCollider2D:
