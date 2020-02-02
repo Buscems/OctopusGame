@@ -49,6 +49,7 @@ public class EndGame : MonoBehaviour {
             number.GetComponent<Image>().sprite = numbers[i];
             yield return new WaitForSeconds(1);
         }
+        UnityEngine.SceneManagement.SceneManager.LoadScene("EndScene");
 
     }
 
