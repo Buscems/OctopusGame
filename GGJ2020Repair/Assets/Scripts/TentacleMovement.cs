@@ -41,8 +41,6 @@ public class TentacleMovement : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        holesPlugged = 0;
-
         rb = GetComponent<Rigidbody2D>();
         plugSource = GetComponent<AudioSource>();
 

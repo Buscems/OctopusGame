@@ -17,6 +17,8 @@ public class EndGame : MonoBehaviour {
 
         seconds = 0;
         Spawner.amountOfWaterParticles = 0;
+        TentacleMovement.holesPlugged = 0;
+        PickTentacle.waterSucked = 0;
 
         number.SetActive(false);
 	}
@@ -29,12 +31,6 @@ public class EndGame : MonoBehaviour {
         if (Spawner.amountOfWaterParticles >= 550 && !startEnd)
         {
             StartCoroutine(StartEnd());
-        }
-        if(Spawner.amountOfWaterParticles < 550)
-        {
-            StopCoroutine(StartEnd());
-            startEnd = false;
-            number.SetActive(false);
         }
 
 	}
