@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class HideCursor : MonoBehaviour {
 
 	public GameObject fadeMenuToGame;
+
 	// Use this for initialization
 	void Start () {
         Cursor.visible = false;
@@ -14,7 +15,11 @@ public class HideCursor : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+			fadeMenuToGame.SetActive(true);
+		}
 	}
 
     public void GoToGame()
