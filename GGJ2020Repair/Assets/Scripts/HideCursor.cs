@@ -12,13 +12,16 @@ public class HideCursor : MonoBehaviour {
 
     public float returnTime;
 
+    public GameObject fadeToMenu;
+
 	// Use this for initialization
 	void Start () {
         Cursor.visible = false;
 		fadeMenuToGame.SetActive(false);
         textHolder.SetActive(false);
         isTitleVisible = false;
-	}
+        fadeToMenu.SetActive(false);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -64,7 +67,7 @@ public class HideCursor : MonoBehaviour {
     {
         returnToTitle = false;
         yield return new WaitForSeconds(returnTime);
-        SceneManager.LoadScene("Title");
+        fadeToMenu.SetActive(true);
     }
 
 }

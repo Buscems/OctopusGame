@@ -217,6 +217,7 @@ MonoBehaviour:
   isTitleVisible: 0
   returnToTitle: 0
   returnTime: 0
+  fadeToMenu: {fileID: 1603081392}
 --- !u!1 &11676010
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +401,7 @@ MonoBehaviour:
   isTitleVisible: 0
   returnToTitle: 0
   returnTime: 0
+  fadeToMenu: {fileID: 1603081392}
 --- !u!1 &297051262
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,6 +779,7 @@ MonoBehaviour:
   isTitleVisible: 0
   returnToTitle: 0
   returnTime: 0
+  fadeToMenu: {fileID: 1603081392}
 --- !u!4 &958197225
 Transform:
   m_ObjectHideFlags: 0
@@ -883,6 +886,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1603081392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1603081393}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1603081393
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1603081392}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1527.3435, y: -348.43835, z: -9.148289}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1740801926
 GameObject:
   m_ObjectHideFlags: 0
