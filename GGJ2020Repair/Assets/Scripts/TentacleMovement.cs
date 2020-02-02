@@ -7,6 +7,7 @@ using Rewired.ControllerExtensions;
 public class TentacleMovement : MonoBehaviour {
 
     //the following is in order to use rewired
+
     [Tooltip("Reference for using rewired")]
     [HideInInspector]
     public Player myPlayer;
@@ -24,6 +25,11 @@ public class TentacleMovement : MonoBehaviour {
 
     GameObject collidingObject;
 
+    private AudioSource plugSource;
+    public AudioClip[] plugSounds;
+
+
+
     private void Awake()
     {
         //Rewired Code
@@ -37,6 +43,7 @@ public class TentacleMovement : MonoBehaviour {
 
 
         rb = GetComponent<Rigidbody2D>();
+        plugSource = GetComponent<AudioSource>();
 
 	}
 	
@@ -45,8 +52,14 @@ public class TentacleMovement : MonoBehaviour {
 
         velocity = new Vector2(myPlayer.GetAxisRaw("MoveHorizontal"), myPlayer.GetAxisRaw("MoveVertical"));
 
+        if(velocity.x != 0 || velocity.y != 0){
+            SoundTimer.timer -= Time.deltaTime;
+        }
+
         if(collidingObject != null && myPlayer.GetButtonDown("Plug"))
         {
+            plugSource.clip = plugSounds[Random.Range(0, plugSounds.Length)];
+            plugSource.Play();
             Destroy(collidingObject);
             collidingObject = null;
         }

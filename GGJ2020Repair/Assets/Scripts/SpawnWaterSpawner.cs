@@ -14,6 +14,9 @@ public class SpawnWaterSpawner : MonoBehaviour {
 
 
 
+
+
+
 	// Use this for initialization
 	void Start () {
         timer = Random.Range(timerMinMax.x, timerMinMax.y);
