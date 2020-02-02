@@ -22,6 +22,8 @@ public class TentacleMovement : MonoBehaviour {
 
     public bool[] actives;
 
+    GameObject collidingObject;
+
     private void Awake()
     {
         //Rewired Code
@@ -43,10 +45,22 @@ public class TentacleMovement : MonoBehaviour {
 
         velocity = new Vector2(myPlayer.GetAxisRaw("MoveHorizontal"), myPlayer.GetAxisRaw("MoveVertical"));
 
-        rb.MovePosition(rb.position + velocity * speed * Time.deltaTime);	
+        if(collidingObject != null && myPlayer.GetButtonDown("Plug"))
+        {
+
+            collidingObject = null;
+        }
+
+        rb.MovePosition(rb.position + velocity * speed * Time.deltaTime);
 	}
 
-
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Hole")
+        {
+            Debug.Log("Yer");
+        }
+    }
 
     //[REWIRED METHODS]
     //these two methods are for ReWired, if any of you guys have any questions about it I can answer them, but you don't need to worry about this for working on the game - Buscemi

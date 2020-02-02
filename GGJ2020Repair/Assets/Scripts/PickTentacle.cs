@@ -19,6 +19,8 @@ public class PickTentacle : MonoBehaviour {
 
     public Color playerColor;
 
+    
+
     private void Awake()
     {
         //Rewired Code
@@ -81,7 +83,7 @@ public class PickTentacle : MonoBehaviour {
 
     }
 
-
+    
     IEnumerator SwitchTentacle()
     {
         currentTentacle++;
