@@ -381,10 +381,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  timerMax: 0.05
+  timerMax: 0.2
   water: {fileID: 6257537880358393787, guid: adcd2b3051f8c4028bc43e1f279d3157, type: 2}
   target: {fileID: 0}
-  pushForce: 0
+  pushForce: 5
   barrelEffect: {fileID: 0}
 --- !u!114 &114712348797688930
 MonoBehaviour:
@@ -398,10 +398,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  timerMax: 0.05
+  timerMax: 0.2
   water: {fileID: 6257537880358393787, guid: e3bf74cdebf7842c781779b0d7118d84, type: 2}
   target: {fileID: 0}
-  pushForce: 0
+  pushForce: 5
   barrelEffect: {fileID: 0}
 --- !u!198 &198015850989904846
 ParticleSystem:

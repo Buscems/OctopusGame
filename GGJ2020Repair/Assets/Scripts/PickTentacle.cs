@@ -25,6 +25,8 @@ public class PickTentacle : MonoBehaviour {
     private AudioSource audioSource;
     public AudioClip[] succSounds;
 
+    bool succ;
+
     private void Awake()
     {
         //Rewired Code
@@ -104,21 +106,26 @@ public class PickTentacle : MonoBehaviour {
         */
         if (myPlayer.GetButtonDown("Suck"))
         {
-            Collider2D[] waterStuff =  Physics2D.OverlapCircleAll(transform.position, 1.5f);
-            foreach(Collider2D water in waterStuff)
-            {
-                if(water.tag == "Water")
-                {
-                    audioSource.clip = succSounds[Random.Range(0, succSounds.Length)];
-                    audioSource.Play();
-                    Spawner.amountOfWaterParticles--;
-                    Destroy(water.gameObject);
-                }
-            }
+
         }
 
     }
 
+    IEnumerator DrinkWater()
+    {
+
+        Collider2D[] waterStuff = Physics2D.OverlapCircleAll(transform.position, 1.5f);
+        foreach (Collider2D water in waterStuff)
+        {
+            if (water.tag == "Water")
+            {
+                audioSource.clip = succSounds[Random.Range(0, succSounds.Length)];
+                audioSource.Play();
+                Spawner.amountOfWaterParticles--;
+                Destroy(water.gameObject);
+            }
+        }
+    }
     
     IEnumerator SwitchTentacle()
     {

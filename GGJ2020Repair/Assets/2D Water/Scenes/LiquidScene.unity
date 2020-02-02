@@ -2508,6 +2508,46 @@ Prefab:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 114723719890427168, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+        type: 2}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114290742881694444, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+        type: 2}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114850291284907288, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+        type: 2}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114996474568035926, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+        type: 2}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114364594328564496, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+        type: 2}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114968561813541502, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+        type: 2}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114652868898026954, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+        type: 2}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426763181462158, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+        type: 2}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0411bd875b11fb43bbeec9fa64a1a1a, type: 2}
   m_IsPrefabParent: 0
@@ -8469,7 +8509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource1: {fileID: 2040863429}
   audioSource2: {fileID: 2040863428}
-  waterThreshold: 700
+  waterThreshold: 250
 --- !u!1 &2041528735
 GameObject:
   m_ObjectHideFlags: 0
