@@ -196,6 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 597113655}
   - component: {fileID: 597113654}
+  - component: {fileID: 597113656}
   m_Layer: 0
   m_Name: Barrel Backing
   m_TagString: Untagged
@@ -261,6 +262,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &597113656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 597113653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0212418720074d34594e31f19e22edab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeLasted: {fileID: 944243494}
+  holesPlugged: {fileID: 421325958}
+  waterSucced: {fileID: 1723469914}
 --- !u!1 &733790338
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,7 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

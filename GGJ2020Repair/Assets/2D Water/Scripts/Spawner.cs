@@ -19,8 +19,6 @@ public class Spawner : MonoBehaviour
     void Start()
     {
 
-        amountOfWaterParticles = 0;
-
         target = GameObject.Find("Container").transform;
         try
         {

@@ -14,6 +14,10 @@ public class EndGame : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+        seconds = 0;
+        Spawner.amountOfWaterParticles = 0;
+
         number.SetActive(false);
 	}
 	
@@ -22,11 +26,11 @@ public class EndGame : MonoBehaviour {
 
         seconds += Time.deltaTime;
 
-        if (Spawner.amountOfWaterParticles >= 400 && !startEnd)
+        if (Spawner.amountOfWaterParticles >= 550 && !startEnd)
         {
             StartCoroutine(StartEnd());
         }
-        if(Spawner.amountOfWaterParticles < 400)
+        if(Spawner.amountOfWaterParticles < 550)
         {
             StopCoroutine(StartEnd());
             startEnd = false;
