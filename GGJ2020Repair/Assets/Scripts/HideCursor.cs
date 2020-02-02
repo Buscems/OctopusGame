@@ -6,17 +6,18 @@ using UnityEngine.SceneManagement;
 public class HideCursor : MonoBehaviour {
 
 	public GameObject fadeMenuToGame;
-
+	public bool isTitleVisible;
 	// Use this for initialization
 	void Start () {
         Cursor.visible = false;
 		fadeMenuToGame.SetActive(false);
+		isTitleVisible = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.anyKey)
+        if (Input.anyKey && isTitleVisible == true)
         {
 			fadeMenuToGame.SetActive(true);
 		}
@@ -26,4 +27,9 @@ public class HideCursor : MonoBehaviour {
     {
 		SceneManager.LoadScene("LiquidScene");
     }
+
+	public void TitleVisible()
+	{
+		isTitleVisible = true;
+	}
 }
