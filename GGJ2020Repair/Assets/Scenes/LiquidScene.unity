@@ -3674,8 +3674,8 @@ GameObject:
   - component: {fileID: 1550151239}
   - component: {fileID: 1550151243}
   - component: {fileID: 1550151242}
-  - component: {fileID: 1550151241}
   - component: {fileID: 1550151240}
+  - component: {fileID: 1550151241}
   m_Layer: 5
   m_Name: Black Fade TO GAME
   m_TagString: Untagged
@@ -3726,7 +3726,7 @@ Animator:
   m_GameObject: {fileID: 1550151238}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fe5c2e7a2014e48969ec016da517d580, type: 2}
+  m_Controller: {fileID: 9100000, guid: d13aefc40c7340f44b95b5bfcf9b8954, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
