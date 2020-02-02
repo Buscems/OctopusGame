@@ -22,12 +22,16 @@ public class PickTentacle : MonoBehaviour {
 
     public Color player1, player2, player3, player4, player5, player6, player7, player8;
 
+    private AudioSource audioSource;
+    public AudioClip[] succSounds;
+
     private void Awake()
     {
         //Rewired Code
         myPlayer = ReInput.players.GetPlayer(playerNum - 1);
         ReInput.ControllerConnectedEvent += OnControllerConnected;
         CheckController(myPlayer);
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Use this for initialization
@@ -105,6 +109,8 @@ public class PickTentacle : MonoBehaviour {
             {
                 if(water.tag == "Water")
                 {
+                    audioSource.clip = succSounds[Random.Range(0, succSounds.Length)];
+                    audioSource.Play();
                     Spawner.amountOfWaterParticles--;
                     Destroy(water.gameObject);
                 }

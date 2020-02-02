@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 61731792492597380}
   - component: {fileID: 50025903850255178}
   - component: {fileID: 233661457245476982}
-  m_Layer: 12
+  m_Layer: 15
   m_Name: Octopus Tentacle Segment 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 61444903709036452}
   - component: {fileID: 50505895657512856}
   - component: {fileID: 233183000542162468}
-  m_Layer: 12
+  m_Layer: 15
   m_Name: Octopus Tentacle Segment 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 50858343812959006}
   - component: {fileID: 114652868898026954}
   - component: {fileID: 82807385125002048}
-  m_Layer: 12
+  m_Layer: 15
   m_Name: Tip6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4800202132819926}
-  m_Layer: 12
+  m_Layer: 17
   m_Name: Tentacle8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +369,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4637924991282528}
-  m_Layer: 12
+  m_Layer: 15
   m_Name: Tentacle6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +408,7 @@ GameObject:
   - component: {fileID: 61866249266576188}
   - component: {fileID: 50565489264786270}
   - component: {fileID: 233488999031370432}
-  m_Layer: 12
+  m_Layer: 16
   m_Name: Octopus Tentacle Segment 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 50578647873281832}
   - component: {fileID: 114290742881694444}
   - component: {fileID: 82429782931440618}
-  m_Layer: 12
+  m_Layer: 16
   m_Name: Tip7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 61507423363259646}
   - component: {fileID: 50138398529037530}
   - component: {fileID: 233153156683277882}
-  m_Layer: 12
+  m_Layer: 15
   m_Name: Octopus Tentacle Segment 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -591,7 +591,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4585426267501332}
-  m_Layer: 12
+  m_Layer: 16
   m_Name: Tentacle7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -610,7 +610,7 @@ GameObject:
   - component: {fileID: 61490142728766348}
   - component: {fileID: 50643710476800298}
   - component: {fileID: 233816596298839146}
-  m_Layer: 12
+  m_Layer: 16
   m_Name: Octopus Tentacle Segment 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -644,7 +644,7 @@ GameObject:
   - component: {fileID: 61634016507249506}
   - component: {fileID: 50461037333978440}
   - component: {fileID: 233618436168565278}
-  m_Layer: 12
+  m_Layer: 17
   m_Name: Octopus Tentacle Segment 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -663,7 +663,7 @@ GameObject:
   - component: {fileID: 61091916414349656}
   - component: {fileID: 50331164975630894}
   - component: {fileID: 233547205937072012}
-  m_Layer: 12
+  m_Layer: 16
   m_Name: Octopus Tentacle Segment 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -701,7 +701,7 @@ GameObject:
   - component: {fileID: 61627461118231358}
   - component: {fileID: 50540563751596504}
   - component: {fileID: 233544289272096594}
-  m_Layer: 12
+  m_Layer: 17
   m_Name: Octopus Tentacle Segment 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -716,7 +716,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4425473229818824}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Tentacle5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -736,7 +736,7 @@ GameObject:
   - component: {fileID: 50409012251041040}
   - component: {fileID: 114850291284907288}
   - component: {fileID: 82400104381182336}
-  m_Layer: 12
+  m_Layer: 17
   m_Name: Tip8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -812,6 +812,7 @@ GameObject:
   - component: {fileID: 233848583295431126}
   - component: {fileID: 233532258485659134}
   - component: {fileID: 233844417230106784}
+  - component: {fileID: 82310602642372278}
   m_Layer: 20
   m_Name: OctopusHead
   m_TagString: Untagged
@@ -866,7 +867,7 @@ GameObject:
   - component: {fileID: 61705576732466244}
   - component: {fileID: 50777630357318700}
   - component: {fileID: 233775798483183286}
-  m_Layer: 12
+  m_Layer: 17
   m_Name: Octopus Tentacle Segment 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1561,7 +1562,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1601,7 +1602,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1621,7 +1622,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1701,7 +1702,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1721,7 +1722,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1741,7 +1742,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1761,7 +1762,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1801,7 +1802,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1821,7 +1822,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1841,7 +1842,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1901,7 +1902,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1941,7 +1942,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1981,7 +1982,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -2021,7 +2022,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -2081,7 +2082,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -2161,7 +2162,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -3279,6 +3280,101 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &82310602642372278
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1893293519280966}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!82 &82324530367056766
 AudioSource:
   m_ObjectHideFlags: 1
@@ -3967,20 +4063,31 @@ MonoBehaviour:
   - {fileID: 1858698135278064}
   currentTentacle: 0
   playerColor: {r: 0, g: 0, b: 0, a: 0}
+  player1: {r: 0.754717, g: 0, b: 0.050848834, a: 1}
+  player2: {r: 0, g: 0.56949115, b: 1, a: 1}
+  player3: {r: 0.9801799, g: 1, b: 0, a: 1}
+  player4: {r: 0, g: 1, b: 0.627451, a: 1}
+  player5: {r: 1, g: 0.44920295, b: 0, a: 1}
+  player6: {r: 1, g: 0.3820755, b: 0.89901483, a: 1}
+  player7: {r: 0.2564631, g: 0, b: 0.6037736, a: 1}
+  player8: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  succSounds:
+  - {fileID: 8300000, guid: b36ca7d4b0d214aa7b40522d69fa2926, type: 3}
+  - {fileID: 8300000, guid: 581ebd087cfa14b6fbac67d820ca7c9e, type: 3}
 --- !u!114 &114290742881694444
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1447604026702708}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11d161a4be590394297636f673bf246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNum: 1
+  playerNum: 7
   velocity: {x: 0, y: 0}
-  speed: 5
+  speed: 8
   actives: 0000
   plugSounds:
   - {fileID: 8300000, guid: ba7a29430536040228df37f2bb2e56bf, type: 3}
@@ -3991,14 +4098,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1033625652843980}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11d161a4be590394297636f673bf246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNum: 1
+  playerNum: 5
   velocity: {x: 0, y: 0}
-  speed: 5
+  speed: 8
   actives: 0000
   plugSounds:
   - {fileID: 8300000, guid: ba7a29430536040228df37f2bb2e56bf, type: 3}
@@ -4009,14 +4116,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1382229597025072}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11d161a4be590394297636f673bf246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerNum: 1
   velocity: {x: 0, y: 0}
-  speed: 5
+  speed: 8
   actives: 0000
   plugSounds:
   - {fileID: 8300000, guid: ba7a29430536040228df37f2bb2e56bf, type: 3}
@@ -4027,14 +4134,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1081670010342808}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11d161a4be590394297636f673bf246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNum: 1
+  playerNum: 6
   velocity: {x: 0, y: 0}
-  speed: 5
+  speed: 8
   actives: 0000
   plugSounds:
   - {fileID: 8300000, guid: ba7a29430536040228df37f2bb2e56bf, type: 3}
@@ -4045,14 +4152,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1427642955297808}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11d161a4be590394297636f673bf246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNum: 1
+  playerNum: 4
   velocity: {x: 0, y: 0}
-  speed: 5
+  speed: 8
   actives: 0000
   plugSounds:
   - {fileID: 8300000, guid: ba7a29430536040228df37f2bb2e56bf, type: 3}
@@ -4063,14 +4170,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1858698135278064}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11d161a4be590394297636f673bf246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNum: 1
+  playerNum: 8
   velocity: {x: 0, y: 0}
-  speed: 5
+  speed: 8
   actives: 0000
   plugSounds:
   - {fileID: 8300000, guid: ba7a29430536040228df37f2bb2e56bf, type: 3}
@@ -4081,14 +4188,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1175279080931152}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11d161a4be590394297636f673bf246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNum: 1
+  playerNum: 3
   velocity: {x: 0, y: 0}
-  speed: 5
+  speed: 8
   actives: 0000
   plugSounds:
   - {fileID: 8300000, guid: ba7a29430536040228df37f2bb2e56bf, type: 3}
@@ -4099,14 +4206,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1102046558422510}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11d161a4be590394297636f673bf246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNum: 1
+  playerNum: 2
   velocity: {x: 0, y: 0}
-  speed: 5
+  speed: 8
   actives: 0000
   plugSounds:
   - {fileID: 8300000, guid: ba7a29430536040228df37f2bb2e56bf, type: 3}
@@ -5837,7 +5944,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.002476454, y: 2.2371662}
+  m_ConnectedAnchor: {x: -0.0024765732, y: 2.2371662}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -5860,7 +5967,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.00000029802325, y: 1.5400007}
+  m_ConnectedAnchor: {x: 0.00000017881395, y: 1.5400008}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -6113,7 +6220,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.0000001192093, y: 1.5099996}
+  m_ConnectedAnchor: {x: -0.00000005960465, y: 1.5099996}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -6274,7 +6381,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.00000005960465, y: 1.6}
+  m_ConnectedAnchor: {x: -0.00000005960465, y: 1.6}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
