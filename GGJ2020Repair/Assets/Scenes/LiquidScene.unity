@@ -284,6 +284,11 @@ Transform:
   m_Father: {fileID: 947123729}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &226983066 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1033625652843980, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1661560972}
 --- !u!1 &318905185
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,6 +550,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &446346449 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1447604026702708, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1661560972}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,6 +628,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &586636306 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1858698135278064, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1661560972}
 --- !u!1 &589794884
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,6 +661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeMenuToGame: {fileID: 1550151238}
+  isTitleVisible: 0
 --- !u!4 &589794886
 Transform:
   m_ObjectHideFlags: 0
@@ -2621,14 +2637,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNum: 2
   tentacle:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1166139486}
+  - {fileID: 1121086004}
+  - {fileID: 1955362447}
+  - {fileID: 1899939689}
+  - {fileID: 226983066}
+  - {fileID: 1452193536}
+  - {fileID: 446346449}
+  - {fileID: 586636306}
   currentTentacle: 1
   playerColor: {r: 0, g: 0, b: 0, a: 0}
   player1: {r: 0.754717, g: 0, b: 0.050848834, a: 1}
@@ -2795,14 +2811,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNum: 6
   tentacle:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1166139486}
+  - {fileID: 1121086004}
+  - {fileID: 1955362447}
+  - {fileID: 1899939689}
+  - {fileID: 226983066}
+  - {fileID: 1452193536}
+  - {fileID: 446346449}
+  - {fileID: 586636306}
   currentTentacle: 5
   playerColor: {r: 0, g: 0, b: 0, a: 0}
   player1: {r: 0.754717, g: 0, b: 0.050848834, a: 1}
@@ -3005,14 +3021,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNum: 7
   tentacle:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1166139486}
+  - {fileID: 1121086004}
+  - {fileID: 1955362447}
+  - {fileID: 1899939689}
+  - {fileID: 226983066}
+  - {fileID: 1452193536}
+  - {fileID: 446346449}
+  - {fileID: 586636306}
   currentTentacle: 6
   playerColor: {r: 0, g: 0, b: 0, a: 0}
   player1: {r: 0.754717, g: 0, b: 0.050848834, a: 1}
@@ -3135,6 +3151,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1121086004 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1102046558422510, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1661560972}
+--- !u!1 &1166139486 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1382229597025072, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1661560972}
 --- !u!1 &1283201999
 GameObject:
   m_ObjectHideFlags: 0
@@ -3179,14 +3205,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNum: 8
   tentacle:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1166139486}
+  - {fileID: 1121086004}
+  - {fileID: 1955362447}
+  - {fileID: 1899939689}
+  - {fileID: 226983066}
+  - {fileID: 1452193536}
+  - {fileID: 446346449}
+  - {fileID: 586636306}
   currentTentacle: 7
   playerColor: {r: 0, g: 0, b: 0, a: 0}
   player1: {r: 0.754717, g: 0, b: 0.050848834, a: 1}
@@ -3445,6 +3471,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1452193536 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1081670010342808, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1661560972}
 --- !u!1 &1512291264
 GameObject:
   m_ObjectHideFlags: 0
@@ -3489,14 +3520,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNum: 5
   tentacle:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1166139486}
+  - {fileID: 1121086004}
+  - {fileID: 1955362447}
+  - {fileID: 1899939689}
+  - {fileID: 226983066}
+  - {fileID: 1452193536}
+  - {fileID: 446346449}
+  - {fileID: 586636306}
   currentTentacle: 4
   playerColor: {r: 0, g: 0, b: 0, a: 0}
   player1: {r: 0.754717, g: 0, b: 0.050848834, a: 1}
@@ -3668,6 +3699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeMenuToGame: {fileID: 1550151238}
+  isTitleVisible: 0
 --- !u!95 &1550151241
 Animator:
   serializedVersion: 3
@@ -8764,6 +8796,11 @@ Transform:
   m_Father: {fileID: 947123729}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1899939689 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1427642955297808, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1661560972}
 --- !u!1 &1933627234
 GameObject:
   m_ObjectHideFlags: 0
@@ -8851,6 +8888,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1933627234}
+--- !u!1 &1955362447 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1175279080931152, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1661560972}
 --- !u!1 &1982689576
 GameObject:
   m_ObjectHideFlags: 0
@@ -8895,14 +8937,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNum: 4
   tentacle:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1166139486}
+  - {fileID: 1121086004}
+  - {fileID: 1955362447}
+  - {fileID: 1899939689}
+  - {fileID: 226983066}
+  - {fileID: 1452193536}
+  - {fileID: 446346449}
+  - {fileID: 586636306}
   currentTentacle: 3
   playerColor: {r: 0, g: 0, b: 0, a: 0}
   player1: {r: 0.754717, g: 0, b: 0.050848834, a: 1}
@@ -9069,14 +9111,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNum: 3
   tentacle:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1166139486}
+  - {fileID: 1121086004}
+  - {fileID: 1955362447}
+  - {fileID: 1899939689}
+  - {fileID: 226983066}
+  - {fileID: 1452193536}
+  - {fileID: 446346449}
+  - {fileID: 586636306}
   currentTentacle: 2
   playerColor: {r: 0, g: 0, b: 0, a: 0}
   player1: {r: 0.754717, g: 0, b: 0.050848834, a: 1}

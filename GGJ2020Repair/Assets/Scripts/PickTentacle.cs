@@ -43,8 +43,6 @@ public class PickTentacle : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        waterSucked = 0;
-
         switch (playerNum)
         {
             case 1:
