@@ -18,6 +18,9 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        amountOfWaterParticles = 0;
+
         target = GameObject.Find("Container").transform;
         try
         {

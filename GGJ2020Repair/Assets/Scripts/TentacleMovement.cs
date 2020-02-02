@@ -28,7 +28,7 @@ public class TentacleMovement : MonoBehaviour {
     private AudioSource plugSource;
     public AudioClip[] plugSounds;
 
-
+    public static int holesPlugged;
 
     private void Awake()
     {
@@ -41,6 +41,7 @@ public class TentacleMovement : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
+        holesPlugged = 0;
 
         rb = GetComponent<Rigidbody2D>();
         plugSource = GetComponent<AudioSource>();
@@ -62,6 +63,7 @@ public class TentacleMovement : MonoBehaviour {
             plugSource.Play();
             Destroy(collidingObject);
             collidingObject = null;
+            holesPlugged++;
         }
 
         rb.MovePosition(rb.position + velocity * speed * Time.deltaTime);

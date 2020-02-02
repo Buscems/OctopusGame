@@ -29,6 +29,8 @@ public class PickTentacle : MonoBehaviour {
 
     public float succTimer;
 
+    public static float waterSucked;
+
     private void Awake()
     {
         //Rewired Code
@@ -40,6 +42,8 @@ public class PickTentacle : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+
+        waterSucked = 0;
 
         switch (playerNum)
         {
@@ -121,6 +125,7 @@ public class PickTentacle : MonoBehaviour {
         {
             if (water.tag == "Water")
             {
+                waterSucked++;
                 audioSource.clip = succSounds[Random.Range(0, succSounds.Length)];
                 audioSource.Play();
                 Spawner.amountOfWaterParticles--;

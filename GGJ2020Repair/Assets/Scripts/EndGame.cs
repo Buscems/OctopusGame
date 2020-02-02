@@ -10,6 +10,8 @@ public class EndGame : MonoBehaviour {
 
     public Sprite[] numbers;
 
+    public static float seconds;
+
 	// Use this for initialization
 	void Start () {
         number.SetActive(false);
@@ -17,6 +19,8 @@ public class EndGame : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        seconds += Time.deltaTime;
 
         if (Spawner.amountOfWaterParticles >= 400 && !startEnd)
         {
