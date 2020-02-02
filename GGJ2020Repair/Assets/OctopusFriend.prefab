@@ -11,6 +11,21 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1108089148575512}
   m_IsPrefabParent: 1
+--- !u!1 &1011169746571436
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4045133331713956}
+  m_Layer: 20
+  m_Name: Left Eye Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1020063636473240
 GameObject:
   m_ObjectHideFlags: 1
@@ -769,7 +784,7 @@ GameObject:
   - component: {fileID: 60709283797325856}
   m_Layer: 18
   m_Name: LeftEyeHolder
-  m_TagString: Untagged
+  m_TagString: LeftEye
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -831,7 +846,7 @@ GameObject:
   - component: {fileID: 60637051334764878}
   m_Layer: 18
   m_Name: RightEyeHolder
-  m_TagString: Untagged
+  m_TagString: RightEye
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -874,6 +889,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1985059001782354
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4913143959506892}
+  m_Layer: 20
+  m_Name: Left Eye Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &4004638123099156
 Transform:
   m_ObjectHideFlags: 1
@@ -904,6 +934,19 @@ Transform:
   m_Father: {fileID: 4367453085910810}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 40.17}
+--- !u!4 &4045133331713956
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1011169746571436}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.99, y: -0.56, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4119354897058834}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4072183876620722
 Transform:
   m_ObjectHideFlags: 1
@@ -942,6 +985,8 @@ Transform:
   m_Children:
   - {fileID: 4570627676819558}
   - {fileID: 4092921668641136}
+  - {fileID: 4045133331713956}
+  - {fileID: 4913143959506892}
   m_Father: {fileID: 4566026304893312}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1491,6 +1536,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4364915513511082}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4913143959506892
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1985059001782354}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.84, y: -0.55999994, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4119354897058834}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4913211224851398
 Transform:
@@ -5945,7 +6003,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.002476454, y: 2.2371662}
+  m_ConnectedAnchor: {x: -0.0024765732, y: 2.2371662}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -5968,7 +6026,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.00000029802325, y: 1.5400007}
+  m_ConnectedAnchor: {x: 0.00000017881395, y: 1.5400008}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -6221,7 +6279,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.0000001192093, y: 1.5099996}
+  m_ConnectedAnchor: {x: -0.00000005960465, y: 1.5099996}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -6382,7 +6440,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.00000005960465, y: 1.6}
+  m_ConnectedAnchor: {x: -0.00000005960465, y: 1.6}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0

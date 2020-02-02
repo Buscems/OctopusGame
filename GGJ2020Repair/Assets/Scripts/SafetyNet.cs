@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SafetyNet : MonoBehaviour {
 
+    public GameObject leftEye, rightEye, leftSpawn, rightSpawn;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -21,6 +23,17 @@ public class SafetyNet : MonoBehaviour {
             Spawner.amountOfWaterParticles--;
             Destroy(other.gameObject);
         }
+
+        if (other.gameObject.tag == "LeftEye")
+        {
+            leftEye.transform.position = leftSpawn.transform.position;
+        }
+
+        if (other.gameObject.tag == "RightEye")
+        {
+            rightEye.transform.position = rightSpawn.transform.position;
+        }
+
     }
 
 }
