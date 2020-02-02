@@ -7,6 +7,11 @@ public class HideCursor : MonoBehaviour {
 
 	public GameObject fadeMenuToGame, textHolder;
 	public bool isTitleVisible;
+
+    public bool returnToTitle;
+
+    public float returnTime;
+
 	// Use this for initialization
 	void Start () {
         Cursor.visible = false;
@@ -21,6 +26,10 @@ public class HideCursor : MonoBehaviour {
         {
 			fadeMenuToGame.SetActive(true);
 		}
+        if (returnToTitle)
+        {
+            StartCoroutine(GoToTitle());
+        }
 	}
 
     public void GoToGame()
@@ -28,9 +37,22 @@ public class HideCursor : MonoBehaviour {
 		SceneManager.LoadScene("LiquidScene");
     }
 
-	public void TitleVisible()
+    public void GoToMENU()
+    {
+        SceneManager.LoadScene("Title");
+    }
+
+    public void TitleVisible()
 	{
 		isTitleVisible = true;
 		textHolder.SetActive(true);
     }
+
+    IEnumerator GoToTitle()
+    {
+        returnToTitle = false;
+        yield return new WaitForSeconds(returnTime);
+        SceneManager.LoadScene("Title");
+    }
+
 }
