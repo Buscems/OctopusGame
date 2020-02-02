@@ -47,7 +47,7 @@ public class TentacleMovement : MonoBehaviour {
 
         if(collidingObject != null && myPlayer.GetButtonDown("Plug"))
         {
-
+            Destroy(collidingObject);
             collidingObject = null;
         }
 
@@ -58,7 +58,15 @@ public class TentacleMovement : MonoBehaviour {
     {
         if (other.gameObject.tag == "Hole")
         {
-            Debug.Log("Yer");
+            collidingObject = other.gameObject;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Hole")
+        {
+            collidingObject = null;
         }
     }
 

@@ -8,6 +8,7 @@ TagManager:
   - Secret
   - Ball
   - Hole
+  - Water
   layers:
   - Default
   - TransparentFX

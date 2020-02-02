@@ -17,6 +17,14 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         target = GameObject.Find("Container").transform;
+        try
+        {
+            barrelEffect.transform.up = (target.position - transform.position).normalized;
+        }
+        catch
+        {
+
+        }
     }
 
     // Update is called once per frame
@@ -37,13 +45,5 @@ public class Spawner : MonoBehaviour
         var temp = Instantiate(water, transform.position, transform.rotation);
         temp.transform.up = (target.position - temp.transform.position).normalized;
         temp.GetComponent<Rigidbody2D>().AddForce(temp.transform.up * pushForce);
-        try
-        {
-            barrelEffect.transform.up = temp.transform.up;
-        }
-        catch
-        {
-
-        }
     }
 }

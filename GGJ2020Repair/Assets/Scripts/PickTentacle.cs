@@ -19,8 +19,6 @@ public class PickTentacle : MonoBehaviour {
 
     public Color playerColor;
 
-    
-
     private void Awake()
     {
         //Rewired Code
@@ -79,6 +77,18 @@ public class PickTentacle : MonoBehaviour {
         if(tentacle[currentTentacle].GetComponent<TentacleMovement>().actives[playerNum - 1])
         {
             tentacle[currentTentacle].GetComponent<TentacleMovement>().enabled = true;
+        }
+
+        if (myPlayer.GetButtonDown("Suck"))
+        {
+            Collider2D[] waterStuff =  Physics2D.OverlapCircleAll(transform.position, 1.5f);
+            foreach(Collider2D water in waterStuff)
+            {
+                if(water.tag == "Water")
+                {
+                    Destroy(water.gameObject);
+                }
+            }
         }
 
     }
