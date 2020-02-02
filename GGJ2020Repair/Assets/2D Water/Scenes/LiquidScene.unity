@@ -1810,9 +1810,9 @@ MonoBehaviour:
   - {fileID: 154279897}
   - {fileID: 914065298}
   timerMinMax: {x: 3, y: 8}
-  playerCamera: {fileID: 0}
+  playerCamera: {fileID: 534669904}
   cameraStartPos: {x: 0, y: 0, z: 0}
-  screenShakeDuration: 0
+  screenShakeDuration: 0.5
 --- !u!1 &914065297
 GameObject:
   m_ObjectHideFlags: 0
