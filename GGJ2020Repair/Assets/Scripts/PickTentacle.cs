@@ -105,6 +105,7 @@ public class PickTentacle : MonoBehaviour {
             {
                 if(water.tag == "Water")
                 {
+                    Spawner.amountOfWaterParticles--;
                     Destroy(water.gameObject);
                 }
             }

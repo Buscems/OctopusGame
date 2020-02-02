@@ -13,6 +13,8 @@ public class Spawner : MonoBehaviour
 
     public GameObject barrelEffect;
 
+    public static int amountOfWaterParticles;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,5 +47,6 @@ public class Spawner : MonoBehaviour
         var temp = Instantiate(water, transform.position, transform.rotation);
         temp.transform.up = (target.position - temp.transform.position).normalized;
         temp.GetComponent<Rigidbody2D>().AddForce(temp.transform.up * pushForce);
+        amountOfWaterParticles++;
     }
 }
