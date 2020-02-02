@@ -46,6 +46,8 @@ public class TentacleMovement : MonoBehaviour {
         rb.MovePosition(rb.position + velocity * speed * Time.deltaTime);	
 	}
 
+
+
     //[REWIRED METHODS]
     //these two methods are for ReWired, if any of you guys have any questions about it I can answer them, but you don't need to worry about this for working on the game - Buscemi
     void OnControllerConnected(ControllerStatusChangedEventArgs arg)

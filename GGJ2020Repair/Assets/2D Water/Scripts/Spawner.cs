@@ -6,10 +6,17 @@ public class Spawner : MonoBehaviour
 {
     public float timer, timerMax;
     public GameObject water;
+
+    public Transform target;
+
+    public float pushForce;
+
+    public GameObject barrelEffect;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        target = GameObject.Find("Container").transform;
     }
 
     // Update is called once per frame
@@ -27,6 +34,16 @@ public class Spawner : MonoBehaviour
     public void MakeParticle()
     {
         timer = 0;
-        Instantiate(water, transform.position, transform.rotation);
+        var temp = Instantiate(water, transform.position, transform.rotation);
+        temp.transform.up = (target.position - temp.transform.position).normalized;
+        temp.GetComponent<Rigidbody2D>().AddForce(temp.transform.up * pushForce);
+        try
+        {
+            barrelEffect.transform.up = temp.transform.up;
+        }
+        catch
+        {
+
+        }
     }
 }
