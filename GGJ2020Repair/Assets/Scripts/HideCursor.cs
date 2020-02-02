@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class HideCursor : MonoBehaviour {
 
-	public GameObject fadeMenuToGame;
+	public GameObject fadeMenuToGame, textHolder;
 	public bool isTitleVisible;
 	// Use this for initialization
 	void Start () {
         Cursor.visible = false;
 		fadeMenuToGame.SetActive(false);
+		textHolder.SetActive(false);
 		isTitleVisible = false;
 	}
 	
@@ -31,5 +32,6 @@ public class HideCursor : MonoBehaviour {
 	public void TitleVisible()
 	{
 		isTitleVisible = true;
+		textHolder.SetActive(true);
 	}
 }
