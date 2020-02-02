@@ -4074,6 +4074,7 @@ MonoBehaviour:
   succSounds:
   - {fileID: 8300000, guid: b36ca7d4b0d214aa7b40522d69fa2926, type: 3}
   - {fileID: 8300000, guid: 581ebd087cfa14b6fbac67d820ca7c9e, type: 3}
+  succTimer: 1.5
 --- !u!114 &114290742881694444
 MonoBehaviour:
   m_ObjectHideFlags: 1

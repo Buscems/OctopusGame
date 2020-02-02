@@ -16,11 +16,24 @@ public class EndScene : MonoBehaviour {
         int minutes = Mathf.FloorToInt((EndGame.seconds % 3600) / 60);
         int seconds = Mathf.FloorToInt(EndGame.seconds % 60);
 
-        timeLasted.text = string.Format("Time Lasted: {0:00} : {1:00} : {2:00}", hours, minutes, seconds);
+        string formattedText = "";
+        if (hours > 0)
+        {
+            formattedText = string.Format("Time Lasted: {0:0} hours, {1:0} minutes, {2:0} seconds", hours, minutes, seconds);
+        }
+        else if(minutes > 0)
+        {
+            formattedText = string.Format("Time Lasted: {0:0} minutes, {1:0} seconds", minutes, seconds);
+        }
+        else
+        {
+            formattedText = string.Format("Time Lasted: {0:0} seconds", seconds);
+        }
+        timeLasted.text = formattedText;
 
-        holesPlugged.text = "Holes Plugged " + TentacleMovement.holesPlugged;
+        holesPlugged.text = "Holes Plugged: " + TentacleMovement.holesPlugged;
 
-        waterSucced.text = "Water Sucked " + PickTentacle.waterSucked;
+        waterSucced.text = "Water Sucked: " + PickTentacle.waterSucked;
 
     }
 	
