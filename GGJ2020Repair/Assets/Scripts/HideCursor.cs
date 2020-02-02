@@ -16,7 +16,8 @@ public class HideCursor : MonoBehaviour {
 	void Start () {
         Cursor.visible = false;
 		fadeMenuToGame.SetActive(false);
-		isTitleVisible = false;
+        textHolder.SetActive(false);
+        isTitleVisible = false;
 	}
 	
 	// Update is called once per frame
