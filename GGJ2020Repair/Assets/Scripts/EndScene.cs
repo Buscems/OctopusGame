@@ -19,21 +19,21 @@ public class EndScene : MonoBehaviour {
         string formattedText = "";
         if (hours > 0)
         {
-            formattedText = string.Format("Time Lasted: {0:0} hours, {1:0} minutes, {2:0} seconds", hours, minutes, seconds);
+            formattedText = string.Format("TIME LASTED: {0:0} hours, {1:0} minutes, {2:0} seconds", hours, minutes, seconds);
         }
         else if(minutes > 0)
         {
-            formattedText = string.Format("Time Lasted: {0:0} minutes, {1:0} seconds", minutes, seconds);
+            formattedText = string.Format("TIME LASTED:: {0:0} minutes, {1:0} seconds", minutes, seconds);
         }
         else
         {
-            formattedText = string.Format("Time Lasted: {0:0} seconds", seconds);
+            formattedText = string.Format("TIME LASTED: {0:0} seconds", seconds);
         }
         timeLasted.text = formattedText;
 
-        holesPlugged.text = "Holes Plugged: " + TentacleMovement.holesPlugged;
+        holesPlugged.text = "HOLES PLUGGED: " + TentacleMovement.holesPlugged;
 
-        waterSucced.text = "Water Sucked: " + PickTentacle.waterSucked;
+        waterSucced.text = "WATER SUCKED: " + PickTentacle.waterSucked;
 
     }
 	

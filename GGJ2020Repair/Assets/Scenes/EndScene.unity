@@ -145,7 +145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -182, y: -40}
+  m_AnchoredPosition: {x: -182, y: -24.999989}
   m_SizeDelta: {x: 394.8, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &421325958
@@ -180,7 +180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Holes Plugged: 13456'
+  m_Text: 'HOLES PLUGGED: 13456'
 --- !u!222 &421325959
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -606,7 +606,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Time Lasted: 1 day 2 hours 3 minutes and 4 seconds'
+  m_Text: 'TIME LASTED: 1 day 2 hours 3 minutes and 4 seconds'
 --- !u!222 &944243495
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -981,6 +981,7 @@ RectTransform:
   - {fileID: 847567056}
   - {fileID: 1113154779}
   - {fileID: 1167231530}
+  - {fileID: 1573405087}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -989,6 +990,80 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1573405086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1573405087}
+  - component: {fileID: 1573405089}
+  - component: {fileID: 1573405088}
+  m_Layer: 5
+  m_Name: HIGH SCORE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1573405087
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1573405086}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1503586152}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -181.99997, y: -171}
+  m_SizeDelta: {x: 394.8, y: 250}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1573405088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1573405086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ba5327d795c4f48db966f73433f74cb0, type: 3}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'HIGH SCORE: '
+--- !u!222 &1573405089
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1573405086}
 --- !u!1 &1723469912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,7 +1096,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -181.99998, y: -115.00001}
+  m_AnchoredPosition: {x: -181.99998, y: -100}
   m_SizeDelta: {x: 394.8, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1723469914
@@ -1056,7 +1131,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Water Sucked: 700'
+  m_Text: 'WATER SUCKED: 700'
 --- !u!222 &1723469915
 CanvasRenderer:
   m_ObjectHideFlags: 0
