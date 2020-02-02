@@ -27,6 +27,8 @@ public class PickTentacle : MonoBehaviour {
 
     bool succ;
 
+    public float succTimer;
+
     private void Awake()
     {
         //Rewired Code
@@ -104,16 +106,16 @@ public class PickTentacle : MonoBehaviour {
             tentacle[currentTentacle].GetComponent<TentacleMovement>().enabled = true;
         }
         */
-        if (myPlayer.GetButtonDown("Suck"))
+        if (myPlayer.GetButtonDown("Suck") && !succ)
         {
-
+            StartCoroutine(DrinkWater());
         }
 
     }
 
     IEnumerator DrinkWater()
     {
-
+        succ = true;
         Collider2D[] waterStuff = Physics2D.OverlapCircleAll(transform.position, 1.5f);
         foreach (Collider2D water in waterStuff)
         {
@@ -125,6 +127,8 @@ public class PickTentacle : MonoBehaviour {
                 Destroy(water.gameObject);
             }
         }
+        yield return new WaitForSeconds(succTimer);
+        succ = false;
     }
     
     IEnumerator SwitchTentacle()

@@ -1974,6 +1974,7 @@ MonoBehaviour:
   succSounds:
   - {fileID: 8300000, guid: b36ca7d4b0d214aa7b40522d69fa2926, type: 3}
   - {fileID: 8300000, guid: 581ebd087cfa14b6fbac67d820ca7c9e, type: 3}
+  succTimer: 1.5
 --- !u!114 &940294004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2147,6 +2148,7 @@ MonoBehaviour:
   succSounds:
   - {fileID: 8300000, guid: b36ca7d4b0d214aa7b40522d69fa2926, type: 3}
   - {fileID: 8300000, guid: 581ebd087cfa14b6fbac67d820ca7c9e, type: 3}
+  succTimer: 1.5
 --- !u!4 &946192779
 Transform:
   m_ObjectHideFlags: 0
@@ -2361,6 +2363,7 @@ MonoBehaviour:
   succSounds:
   - {fileID: 8300000, guid: b36ca7d4b0d214aa7b40522d69fa2926, type: 3}
   - {fileID: 8300000, guid: 581ebd087cfa14b6fbac67d820ca7c9e, type: 3}
+  succTimer: 1.5
 --- !u!4 &1016567985
 Transform:
   m_ObjectHideFlags: 0
@@ -2548,6 +2551,11 @@ Prefab:
       propertyPath: speed
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114154450282609294, guid: a0411bd875b11fb43bbeec9fa64a1a1a,
+        type: 2}
+      propertyPath: succTimer
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0411bd875b11fb43bbeec9fa64a1a1a, type: 2}
   m_IsPrefabParent: 0
@@ -2616,6 +2624,7 @@ MonoBehaviour:
   succSounds:
   - {fileID: 8300000, guid: b36ca7d4b0d214aa7b40522d69fa2926, type: 3}
   - {fileID: 8300000, guid: 581ebd087cfa14b6fbac67d820ca7c9e, type: 3}
+  succTimer: 1.5
 --- !u!4 &1283202002
 Transform:
   m_ObjectHideFlags: 0
@@ -2863,6 +2872,7 @@ MonoBehaviour:
   succSounds:
   - {fileID: 8300000, guid: b36ca7d4b0d214aa7b40522d69fa2926, type: 3}
   - {fileID: 8300000, guid: 581ebd087cfa14b6fbac67d820ca7c9e, type: 3}
+  succTimer: 1.5
 --- !u!4 &1512291267
 Transform:
   m_ObjectHideFlags: 0
@@ -7966,6 +7976,7 @@ MonoBehaviour:
   succSounds:
   - {fileID: 8300000, guid: b36ca7d4b0d214aa7b40522d69fa2926, type: 3}
   - {fileID: 8300000, guid: 581ebd087cfa14b6fbac67d820ca7c9e, type: 3}
+  succTimer: 1.5
 --- !u!4 &1982689579
 Transform:
   m_ObjectHideFlags: 0
@@ -8139,6 +8150,7 @@ MonoBehaviour:
   succSounds:
   - {fileID: 8300000, guid: b36ca7d4b0d214aa7b40522d69fa2926, type: 3}
   - {fileID: 8300000, guid: 581ebd087cfa14b6fbac67d820ca7c9e, type: 3}
+  succTimer: 1.5
 --- !u!4 &1996477870
 Transform:
   m_ObjectHideFlags: 0
