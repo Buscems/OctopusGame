@@ -23,7 +23,7 @@ public class EndScene : MonoBehaviour {
         }
         else if(minutes > 0)
         {
-            formattedText = string.Format("TIME LASTED:: {0:0} minutes, {1:0} seconds", minutes, seconds);
+            formattedText = string.Format("TIME LASTED: {0:0} minutes, {1:0} seconds", minutes, seconds);
         }
         else
         {
