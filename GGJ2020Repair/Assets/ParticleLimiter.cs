@@ -14,6 +14,7 @@ public class ParticleLimiter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        /*
         if (rb.velocity.x >= 20)
         {
             rb.velocity = new Vector2(8, rb.velocity.y);
@@ -22,6 +23,7 @@ public class ParticleLimiter : MonoBehaviour {
         {
             rb.velocity = new Vector2(rb.velocity.x, 8);
         }
+        */
 
     }
 }

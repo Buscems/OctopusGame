@@ -17,7 +17,10 @@ public class PickTentacle : MonoBehaviour {
     public GameObject[] tentacle;
     public int currentTentacle;
 
+    [HideInInspector]
     public Color playerColor;
+
+    public Color player1, player2, player3, player4, player5, player6, player7, player8;
 
     private void Awake()
     {
@@ -33,19 +36,31 @@ public class PickTentacle : MonoBehaviour {
         switch (playerNum)
         {
             case 1:
-                playerColor = Color.red;
+                playerColor = player1;
                 break;
             case 2:
-                playerColor = Color.blue;
+                playerColor = player2;
                 break;
             case 3:
-                playerColor = Color.cyan;
+                playerColor = player3;
                 break;
             case 4:
-                playerColor = Color.yellow;
+                playerColor = player4;
+                break;
+            case 5:
+                playerColor = player5;
+                break;
+            case 6:
+                playerColor = player6;
+                break;
+            case 7:
+                playerColor = player7;
+                break;
+            case 8:
+                playerColor = player8;
                 break;
         }
-
+        /*
         for (int i = 0; i < tentacle.Length; i++)
         {
             for (int k = 0; k < tentacle[currentTentacle].GetComponent<TentacleMovement>().actives.Length; k++)
@@ -61,24 +76,28 @@ public class PickTentacle : MonoBehaviour {
                 }
             }
         }
+        */
         tentacle[currentTentacle].GetComponent<TentacleMovement>().enabled = true;
         tentacle[currentTentacle].GetComponent<SpriteRenderer>().color = playerColor;
-        tentacle[currentTentacle].GetComponent<TentacleMovement>().actives[playerNum - 1] = true;
+        tentacle[currentTentacle].GetComponent<TentacleMovement>().playerNum = playerNum;
     }
 	
 	// Update is called once per frame
 	void Update () {
 
+        /*
         if (myPlayer.GetButtonDown("SwitchTentacle"))
         {
             StartCoroutine(SwitchTentacle());
         }
+        */
 
+        /*
         if(tentacle[currentTentacle].GetComponent<TentacleMovement>().actives[playerNum - 1])
         {
             tentacle[currentTentacle].GetComponent<TentacleMovement>().enabled = true;
         }
-
+        */
         if (myPlayer.GetButtonDown("Suck"))
         {
             Collider2D[] waterStuff =  Physics2D.OverlapCircleAll(transform.position, 1.5f);
