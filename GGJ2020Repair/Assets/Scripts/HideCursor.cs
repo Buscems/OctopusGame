@@ -42,6 +42,11 @@ public class HideCursor : MonoBehaviour {
         SceneManager.LoadScene("Title");
     }
 
+    public void GoToEnd()
+    {
+        SceneManager.LoadScene("EndScene");
+    }
+
     public void TitleVisible()
 	{
 		isTitleVisible = true;

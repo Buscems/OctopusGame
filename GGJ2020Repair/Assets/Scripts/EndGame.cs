@@ -12,8 +12,14 @@ public class EndGame : MonoBehaviour {
 
     public static float seconds;
 
+    public GameObject fade;
+
+    bool startFade;
+
 	// Use this for initialization
 	void Start () {
+
+        fade.SetActive(false);
 
         seconds = 0;
         Spawner.amountOfWaterParticles = 0;
@@ -33,6 +39,11 @@ public class EndGame : MonoBehaviour {
             StartCoroutine(StartEnd());
         }
 
+        if (startFade)
+        {
+            fade.SetActive(true);
+        }
+
 	}
 
     IEnumerator StartEnd()
@@ -45,7 +56,7 @@ public class EndGame : MonoBehaviour {
             number.GetComponent<Image>().sprite = numbers[i];
             yield return new WaitForSeconds(1);
         }
-        UnityEngine.SceneManagement.SceneManager.LoadScene("EndScene");
+        startFade = true;
 
     }
 
